@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Our Team</h2>
+            <p>We are a group of students passionate about history and culture...</p>
+        </section>
+        <section>
+            <h2>Meet the Team</h2>
+            <table id="team-table">
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>ABC123</td>
+                    <td>Project Manager</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>DEF456</td>
+                    <td>Researcher</td>
+                </tr>
+                <tr>
+                    <td>Michael Johnson</td>
+                    <td>GHI789</td>
+                    <td>Designer</td>
+                </tr>
+                <!-- Add more team members as necessary -->
+            </table>
+            <div class="container">
+                <h2> location map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54600.42331162224!2d29.922798773649156!3d31.2061408492913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3fd55e6fdc3%3A0xdc954420d1ddd6b0!2z2LHYp9izINin2YTYqtmK2YbYjCDYp9mE2LPZitin2YTYqSDYtNix2YLYjCDYp9mE2KzZhdix2YPYjCDZhdit2KfZgdi42Kkg2KfZhNil2LPZg9mG2K_YsdmK2KkgNTMyMTM3MA!5e0!3m2!1sar!2seg!4v1710783283742!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+   
+    <footer>
+        <p>&copy; 2024 Ras Al-Tin Palace Documentation | Created by Your Team Name</p>
+    </footer>
+    <script>
+        // JavaScript code to highlight team member's row when hovered over
+        var teamRows = document.querySelectorAll("#team-table tr");
+
+        for (var i = 0; i < teamRows.length; i++) {
+            teamRows[i].addEventListener("mouseover", function() {
+                this.style.backgroundColor = "#f0f0f0"; // Change background color on hover
+            });
+
+            teamRows[i].addEventListener("mouseout", function() {
+                this.style.backgroundColor = ""; // Reset background color on mouseout
+            });
+        }
+    </script>
+   
+</body>
+</html>
